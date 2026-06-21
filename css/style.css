@@ -171,3 +171,64 @@ footer{
 
     padding:20px;
 }
+
+.contact-section{
+    padding:60px 10%;
+    text-align:center;
+
+    background-image:url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    min-height:100vh;
+}
+    
+    .contact-container{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:30px;
+    }
+    
+    .contact-card{
+        background:rgba(255,255,255,0.92);
+        width:400px;
+        padding:30px;
+        border-radius:15px;
+        box-shadow:0 8px 25px rgba(0,0,0,0.25);
+    }
+    
+    .contact-card a{
+    text-decoration:none;
+    }
+    
+    .office-location{
+        margin-top:50px;
+        font-size:22px;
+        color:white;
+        background:rgba(0,0,0,0.55);
+        padding:20px;
+        border-radius:10px;
+    }
+
+
+    .contact-card:first-child h2{
+        color:#0066cc;
+    }
+    
+    .contact-card:last-child h2{
+        color:#e67e22;
+    }
+
+    body{
+        min-height:100vh;
+        display:flex;
+        flex-direction:column;
+    }
+    
+    footer{
+        margin-top:auto;
+    }
+    
