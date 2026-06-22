@@ -795,3 +795,75 @@ footer{
             font-size:14px;
         }
     }
+
+     /* Trust Section - Hero ke neeche gap + Box Design */
+.trust-section{
+    padding:100px 20px; /* upar-neeche 100px gap de diya */
+    background:#ffffff;
+    margin-top:0; /* Hero se gap padding se aa jayega */
+}
+
+.trust-section .container{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.trust-section h2{
+    text-align:center;
+    font-size:40px;
+    color:#111;
+    margin-bottom:60px;
+    font-weight:700;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:40px;
+}
+
+.trust-box{
+    background:#f8f8f8;
+    padding:45px 40px;
+    border-radius:18px;
+    border-left:7px solid #111;
+    box-shadow:0 8px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.trust-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.18);
+}
+
+.trust-box .icon{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.trust-box h3{
+    font-size:28px;
+    color:#111;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.trust-box p{
+    font-size:17px;
+    line-height:1.8;
+    color:#444;
+}
+
+/* Mobile */
+@media (max-width:768px){
+    .trust-grid{
+        grid-template-columns: 1fr;
+    }
+    .trust-section{
+        padding:60px 15px;
+    }
+    .trust-section h2{
+        font-size:28px;
+        margin-bottom:40px;
+    }
+}
