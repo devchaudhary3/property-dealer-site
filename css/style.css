@@ -247,7 +247,6 @@ footer{
     text-align:center; /* sirf name center */
 }
 
-
 /* 5. Visit Us niche kar diya + box style */
 .office-location{
     margin-top:20px;
@@ -311,19 +310,304 @@ footer{
         margin-top:auto;
     }
 
-.logo{
+    .logo{
+        display:flex;
+        align-items:center;
+        gap:10px;
+        font-size:24px;
+        font-weight:bold;
+    }
+    
+    .logo img{
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        object-fit:cover;
+        border:2px solid gold;
+    }
+    
+
+    /* ABOUT PAGE */
+
+.about-section{
+    padding:80px 10%;
+    background:#ffffff;
+}
+
+.about-section h1{
+    text-align:center;
+    font-size:48px;
+    color:#111;
+    margin-bottom:60px;
+}
+
+.about-box{
     display:flex;
     align-items:center;
-    gap:10px;
-    font-size:24px;
+    justify-content:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.experience-circle{
+    width:220px;
+    height:220px;
+    border:5px solid #111;
+    border-radius:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.experience-circle h2{
+    font-size:65px;
+    color:#111;
+}
+
+.experience-circle p{
+    font-size:20px;
     font-weight:bold;
 }
 
-.logo img{
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    object-fit:cover;
-    border:2px solid gold;
+.about-content{
+    max-width:700px;
+    background:#f8f8f8;
+    padding:40px;
+    border-left:6px solid #111;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.12);
 }
+
+.about-content h2{
+    margin-bottom:20px;
+    color:#111;
+    font-size:30px;
+}
+
+.about-content p{
+    line-height:1.8;
+    font-size:18px;
+    margin-bottom:15px;
+    color:#333;
+}
+
+/* WHY CHOOSE US */
+
+.why-us{
+    padding:80px 10%;
+    background:#fafafa;
+}
+
+.why-us h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+    color:#111;
+}
+
+.why-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.why-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+}
+
+.why-card h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:#111;
+}
+
+.why-card p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* JOURNEY */
+
+.journey-section{
+    padding:80px 10%;
+    background:white;
+    text-align:center;
+    }
     
+    .timeline{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:50px;
+    }
+    
+    .timeline-item{
+    width:220px;
+    padding:30px;
+    background:#f8f8f8;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .timeline-item h3{
+    font-size:35px;
+    margin-bottom:15px;
+    }
+    
+    /* SERVICES */
+    
+    .services-section{
+    padding:80px 10%;
+    background:#fafafa;
+    text-align:center;
+    }
+    
+    .service-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+    margin-top:50px;
+
+    margin-top:-7px;
+    }
+    
+    .service-card{
+        width:340px;
+        height:500px;
+        
+        padding:140px 30px 50px;
+        
+        background:white;
+        
+        clip-path:polygon(50% 0%,100% 100%,0% 100%);
+        
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-end;
+        
+        text-align:center;
+        
+        box-shadow:0 8px 25px rgba(0,0,0,0.15);
+        
+        transition:0.3s;
+     }
+    .service-card:hover{
+        transform:translateY(-10px);
+        background:#87CEEB; /* Sky Blue */
+        box-shadow:0 12px 30px rgba(0,0,0,0.25);
+    }
+    .service-card{
+      transition:all 0.4s ease;
+    }
+    
+    .service-card h3{
+        font-size:28px;
+        margin-bottom:15px;
+    }
+    
+    .service-card p{
+        font-size:17px;
+        line-height:1.8;
+        max-width:250px;
+    }
+
+    .services-section h2{
+        font-size:60px;
+        font-weight:800;
+        letter-spacing:2px;
+        text-transform:uppercase;
+    
+        margin-top:-30px;   /* heading upar jayegi */
+        margin-bottom:15px; /* triangles ke paas aa jayegi */
+    }
+    /* LOCATIONS */
+    
+    .locations-section{
+    padding:80px 10%;
+    text-align:center;
+    }
+    
+    .location-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+    margin-top:50px;
+    }
+    
+    .location-grid div{
+    background:#111;
+    color:white;
+    padding:25px;
+    border-radius:12px;
+    font-size:20px;
+    }
+    
+    /* VISION */
+    
+    .vision-section{
+    padding:80px 10%;
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+    }
+    
+    .vision-box{
+    max-width:500px;
+    padding:40px;
+    background:#f8f8f8;
+    border-left:6px solid black;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    }
+    
+    /* FLOW */
+    
+    .flow-section{
+    padding:80px 10%;
+    text-align:center;
+    background:#fafafa;
+    }
+    
+    .flow-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:50px;
+    }
+    
+    .flow-step{
+    width:220px;
+    padding:35px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    }
+    
+    .flow-step span{
+    display:inline-flex;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:black;
+    color:white;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    margin-bottom:20px;
+    }
