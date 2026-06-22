@@ -172,56 +172,125 @@ footer{
     padding:20px;
 }
 
+/* 1. Piche ka background WHITE kar diya */
 .contact-section{
-    padding:60px 10%;
+    padding:80px 10%;
     text-align:center;
-
-    background-image:url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
+    background:#ffffff; /* White background */
     min-height:100vh;
 }
-    
-    .contact-container{
+
+/* 2. Contact Us bada + dark color */
+.contact-section h1{
+    font-size:48px; /* Bada kar diya */
+    color:#222; /* Dark grey/black */
+    margin-bottom:50px;
+    font-weight:700;
+}
+
+.contact-container{
     display:flex;
-    justify-content:space-between;
-    gap:30px;
+    justify-content:center; /* Center me la diya */
+    gap:40px; /* Box ke beech gap */
     flex-wrap:wrap;
     margin-top:30px;
-    }
+    margin-bottom:60px; /* Visit Us ke liye space */
+}
+
+/* 3 + 4. Box ka size bada + Name bada + Content vertical align */
+.contact-card{
+    background:#f8f8f8; /* Light grey box */
+    width:450px; /* Box bada kiya */
+    padding:40px 30px; /* Padding bada */
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
     
-    .contact-card{
-        background:rgba(255,255,255,0.92);
-        width:400px;
-        padding:30px;
-        border-radius:15px;
-        box-shadow:0 8px 25px rgba(0,0,0,0.25);
-    }
-    
-    .contact-card a{
+    display:flex; /* Vertical align ke liye */
+    flex-direction:column;
+    justify-content:center; /* Center vertical */
+    min-height:280px; /* Dono box equal height */
+    text-align:center;
+}
+
+/* Name ka size bada */
+.contact-card h2{
+    font-size:32px; /* Name bada */
+    margin-bottom:25px;
+}
+
+/* 4. Contact/Email/WhatsApp vertical equal spacing */
+.contact-card p{
+    margin:12px 0; /* Sab me equal gap */
+    font-size:18px;
+    line-height:1.6;
+}
+
+.contact-card a{
     text-decoration:none;
-    }
-    
-    .office-location{
-        margin-top:50px;
-        font-size:22px;
-        color:white;
-        background:rgba(0,0,0,0.55);
-        padding:20px;
-        border-radius:10px;
-    }
+    color:#0066cc;
+}
 
+/* Name ka color */
+.contact-card:first-child h2{
+    color:#0066cc;
+}
+.contact-card:last-child h2{
+    color:#e67e22;
+}
 
-    .contact-card:first-child h2{
-        color:#0066cc;
-    }
-    
-    .contact-card:last-child h2{
-        color:#e67e22;
-    }
+/* 5. Visit Us niche kar diya + box style */
+.office-location{
+    margin-top:20px;
+    font-size:22px;
+    color:#333;
+    background:#f0f0f0; /* Light grey box */
+    padding:25px;
+    border-radius:10px;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
 
+.office-location h3{
+    font-size:28px;
+    margin-bottom:10px;
+    color:#222;
+}
+
+/* 6. Social Icons ke liye - neeche add karna */
+.social-icons{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.social-icons a{
+    display:inline-block;
+    width:45px;
+    height:45px;
+    background:#111;
+    border-radius:50%;
+    line-height:45px;
+    color:white;
+    font-size:22px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    background:gold;
+    color:#111;
+    transform:translateY(-5px);
+}
+
+/* Logo size thik kiya */
+.logo img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid gold;
+}
     body{
         min-height:100vh;
         display:flex;
