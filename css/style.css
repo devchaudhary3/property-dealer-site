@@ -869,19 +869,31 @@ footer{
 }
 
 /* Category Circles Section */
+/* Category Circles Section */
 .category-circles{
     padding:80px 20px;
-    background:#fff;
+    background-image: url('../images/ai1.jpeg'); /* white ki jagah photo */
+    background-size: cover; /* pura section cover karegi */
+    background-position: center; /* center se crop */
+    background-attachment: fixed; /* scroll karte time parallax effect */
+    position: relative;
+}
+
+.category-circles::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(255,255,255,0.5); /* 85% white overlay */
+    z-index:1;
 }
 
 .circle-wrap{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:40px;
-    max-width:900px;
-    margin:0 auto;
+    position:relative; /* overlay ke upar lane ke liye */
+    z-index:2;
 }
-
 .circle-item{
     width:100%;
     aspect-ratio:1/1; /* perfect circle */
