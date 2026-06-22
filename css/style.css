@@ -615,158 +615,183 @@ footer{
     font-size:24px;
     margin-bottom:20px;
     }
-    /* MOBILE RESPONSIVE */
-@media screen and (max-width:768px){
+ /* MOBILE RESPONSIVE */
 
-    /* Navbar */
+    @media screen and (max-width:768px){
 
-    nav{
-        flex-direction:column;
-        padding:15px 10px;
-        gap:15px;
+        /* Navbar */
+    
+        nav{
+            flex-direction:column;
+            padding:15px 10px;
+            gap:15px;
+        }
+    
+        .logo{
+            font-size:16px;
+            text-align:center;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+    
+        .logo img{
+            width:45px;
+            height:45px;
+        }
+    
+        nav ul{
+            width:100%;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:10px;
+            margin-top:10px;
+        }
+    
+        nav ul li{
+            margin:0;
+        }
+    
+        nav ul li a{
+            font-size:16px;
+        }
+    
+        /* Hero Section */
+    
+        .hero{
+            height:75vh;
+        }
+    
+        .hero-content{
+            width:95%;
+            padding:20px;
+        }
+    
+        .hero-content h1{
+            font-size:42px;
+            line-height:1.2;
+        }
+    
+        .hero-content p{
+            font-size:18px;
+        }
+    
+        .btn{
+            padding:12px 20px;
+            font-size:18px;
+        }
+    
+        /* Featured Properties */
+    
+        .featured{
+            padding:40px 15px;
+        }
+    
+        .featured h2{
+            font-size:32px;
+            margin-bottom:25px;
+        }
+    
+        .property-container{
+            grid-template-columns:1fr;
+        }
+    
+        .property-card img{
+            height:220px;
+        }
+    
+        /* Contact Page */
+    
+        .contact-container{
+            flex-direction:column;
+            align-items:center;
+        }
+    
+        .contact-card{
+            width:100%;
+            max-width:420px;
+            min-height:auto;
+            padding:30px 20px;
+        }
+    
+        .contact-card h2{
+            font-size:28px;
+        }
+    
+        .contact-card p{
+            margin:10px 0;
+            font-size:15px;
+        
+            display:grid;
+            grid-template-columns:80px 1fr;
+            gap:10px;
+        
+            padding:0 5px;
+        
+            word-break:break-word;
+        }
+        .contact-card a{
+            word-break:break-word;
+            overflow-wrap:anywhere;
+        }
+
+        /* About Page */
+    
+        .about-card{
+            width:100%;
+        }
+    
+        .timeline{
+            flex-direction:column;
+            align-items:center;
+        }
+    
+        /* Services Triangle */
+    
+        .service-card{
+            width:300px;
+            min-height:320px;
+            padding:80px 25px 70px;
+        }
+    
+        .service-card h3{
+            font-size:22px;
+        }
+    
+        .service-card p{
+            font-size:15px;
+            max-width:180px;
+        }
+    
+        /* Global */
+    
+        h1{
+            font-size:36px !important;
+        }
+    
+        h2{
+            font-size:30px !important;
+        }
+    
+        p{
+            font-size:16px;
+        }
+    
+        body{
+            overflow-x:hidden;
+        }
     }
+    @media screen and (max-width:480px){
 
-    .logo{
-        font-size:16px;
-        text-align:center;
-        justify-content:center;
-        flex-wrap:wrap;
+        .contact-card{
+            padding:25px 12px;
+        }
+    
+        .contact-card h2{
+            font-size:24px;
+        }
+    
+        .contact-card p{
+            grid-template-columns:75px 1fr;
+            font-size:14px;
+        }
     }
-
-    .logo img{
-        width:45px;
-        height:45px;
-    }
-
-    nav ul{
-        width:100%;
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:10px;
-        margin-top:10px;
-    }
-
-    nav ul li{
-        margin:0;
-    }
-
-    nav ul li a{
-        font-size:16px;
-    }
-
-    /* Hero Section */
-
-    .hero{
-        height:75vh;
-    }
-
-    .hero-content{
-        width:95%;
-        padding:20px;
-    }
-
-    .hero-content h1{
-        font-size:42px;
-        line-height:1.2;
-    }
-
-    .hero-content p{
-        font-size:18px;
-    }
-
-    .btn{
-        padding:12px 20px;
-        font-size:18px;
-    }
-
-    /* Featured Properties */
-
-    .featured{
-        padding:40px 15px;
-    }
-
-    .featured h2{
-        font-size:32px;
-        margin-bottom:25px;
-    }
-
-    .property-container{
-        grid-template-columns:1fr;
-    }
-
-    .property-card img{
-        height:220px;
-    }
-
-    /* Contact Page */
-
-    .contact-container{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .contact-card{
-        width:100%;
-        max-width:420px;
-        min-height:auto;
-        padding:30px 20px;
-    }
-
-    .contact-card h2{
-        font-size:28px;
-    }
-
-    .contact-card p{
-        padding:0 10px;
-        font-size:16px;
-        grid-template-columns:95px 1fr;
-    }
-
-    /* About Page */
-
-    .about-card{
-        width:100%;
-    }
-
-    .timeline{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    /* Services Triangle */
-
-    .service-card{
-        width:300px;
-        min-height:320px;
-        padding:80px 25px 70px;
-    }
-
-    .service-card h3{
-        font-size:22px;
-    }
-
-    .service-card p{
-        font-size:15px;
-        max-width:180px;
-    }
-
-    /* Global */
-
-    h1{
-        font-size:36px !important;
-    }
-
-    h2{
-        font-size:30px !important;
-    }
-
-    p{
-        font-size:16px;
-    }
-
-    body{
-        overflow-x:hidden;
-    }
-}
-
-
