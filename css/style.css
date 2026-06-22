@@ -209,34 +209,44 @@ footer{
     flex-direction:column;
     justify-content:center; /* Center vertical */
     min-height:280px; /* Dono box equal height */
-    text-align:center;
+    text-align:left;
 }
 
-/* Name ka size bada */
-.contact-card h2{
-    font-size:32px; /* Name bada */
-    margin-bottom:25px;
-}
-
-/* 4. Contact/Email/WhatsApp vertical equal spacing */
+/* Contact/WhatsApp/Email ek line me */
 .contact-card p{
-    margin:12px 0; /* Sab me equal gap */
+    margin:12px 0;
     font-size:18px;
     line-height:1.6;
+    
+    display:grid;
+    grid-template-columns: 120px auto ;
+    gap:10px ;
+    padding:0 40px; /* dono taraf space */
+    align-items:center;
+}
+
+.contact-card p strong{
+    min-width: 110;
+    text-align:right;
+    color:#000;
+    
 }
 
 .contact-card a{
     text-decoration:none;
     color:#0066cc;
+    flex:1;
 }
 
-/* Name ka color */
-.contact-card:first-child h2{
-    color:#0066cc;
+/* Dono name black - sirf 1 baar */
+.contact-card h2{
+    color:#000;
+    font-size:32px;
+    margin-bottom:25px;
+    font-weight:700;
+    text-align:center; /* sirf name center */
 }
-.contact-card:last-child h2{
-    color:#e67e22;
-}
+
 
 /* 5. Visit Us niche kar diya + box style */
 .office-location{
