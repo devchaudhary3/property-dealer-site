@@ -936,4 +936,7 @@ footer{
     .circle-item span{
         font-size:13px;
     }
+    .category-circles::before{
+        background:rgba(255,255,255,0.2); /* PC me 0.5, mobile me 0.2 */
+    }
 }
