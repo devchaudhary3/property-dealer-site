@@ -1074,3 +1074,414 @@ nav ul li a:hover{
         background-attachment: scroll; /* fixed ki jagah scroll */
     }
 }
+
+* Properties Hero Banner */
+.properties-hero{
+    background:linear-gradient(135deg, #0a0a23 0%, #1a1a3a 100%);
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.properties-hero-content h1{
+    font-size:48px;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.properties-hero-content p{
+    font-size:20px;
+    color:#d4a017;
+    margin-bottom:40px;
+}
+
+.stats-row{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.stat h3{
+    font-size:50px;
+    color:#d4a017;
+    margin-bottom:5px;
+    font-weight:700;
+}
+
+.stat p{
+    font-size:16px;
+    color:#ccc;
+}
+
+/* Filter Bar */
+.filter-bar{
+    background:white;
+    padding:25px 20px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+.filter-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.filter-btn{
+    padding:12px 25px;
+    border:2px solid #0a0a23;
+    background:white;
+    color:#0a0a23;
+    border-radius:25px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:15px;
+}
+
+.filter-btn:hover, .filter-btn.active{
+    background:#0a0a23;
+    color:white;
+    transform:translateY(-2px);
+}
+
+/* Property Card Upgrades */
+.property-card{
+    position:relative;
+}
+
+.property-badge{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#d4a017;
+    color:#0a0a23;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:700;
+    z-index:2;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.property-tags{
+    padding:0 15px 10px;
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.property-tags span{
+    background:#e8f4f8;
+    color:#0a0a23;
+    padding:4px 10px;
+    border-radius:15px;
+    font-size:11px;
+    font-weight:600;
+}
+
+.property-card a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    background:#25D366; /* WhatsApp green */
+    font-weight:600;
+    margin:15px;
+}
+
+.property-card a:hover{
+    background:#20ba5a;
+    transform:translateY(-2px);
+}
+
+/* Why Choose Us Section */
+.why-properties{
+    padding:80px 20px;
+    background:#fafafa;
+}
+
+.why-properties h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+    color:#111;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.why-item{
+    background:white;
+    padding:40px 30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+    border-top:4px solid transparent;
+}
+
+.why-item:hover{
+    transform:translateY(-10px);
+    border-top:4px solid #d4a017;
+    box-shadow:0 15px 40px rgba(0,0,0,0.18);
+}
+
+.why-item .icon{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.why-item h3{
+    font-size:22px;
+    margin-bottom:12px;
+    color:#111;
+    font-weight:700;
+}
+
+.why-item p{
+    color:#555;
+    line-height:1.7;
+    font-size:16px;
+}
+
+/* FAQ Section */
+.faq-section{
+    padding:80px 20px;
+    background:white;
+}
+
+.faq-section h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+    color:#111;
+}
+
+.faq-container{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item{
+    background:#f8f8f8;
+    padding:25px 30px;
+    margin-bottom:15px;
+    border-radius:10px;
+    border-left:4px solid #d4a017;
+    transition:0.3s;
+}
+
+.faq-item:hover{
+    background:#f0f0f0;
+    transform:translateX(5px);
+}
+
+.faq-item h4{
+    font-size:20px;
+    margin-bottom:10px;
+    color:#111;
+    font-weight:700;
+}
+
+.faq-item p{
+    color:#555;
+    line-height:1.7;
+    font-size:16px;
+}
+
+/* Mobile Responsive for Properties */
+@media (max-width:768px){
+    .properties-hero{ padding:60px 15px; }
+    .properties-hero-content h1{ font-size:32px; line-height:1.3; }
+    .properties-hero-content p{ font-size:16px; }
+    .stats-row{ gap:30px; }
+    .stat h3{ font-size:35px; }
+    .stat p{ font-size:14px; }
+    
+    .filter-container{ gap:10px; }
+    .filter-btn{ padding:10px 18px; font-size:14px; }
+    
+    .why-properties, .faq-section{ padding:60px 15px; }
+    .why-properties h2, .faq-section h2{ font-size:28px; margin-bottom:35px; }
+    
+    .faq-item{ padding:20px 20px; }
+    .faq-item h4{ font-size:18px; }
+}
+
+/* Extra Mobile Responsive - 320px to 768px */
+@media screen and (max-width: 768px) {
+    
+    /* Navbar Mobile */
+    nav{
+        flex-direction:column;
+        padding:15px 10px;
+        gap:10px;
+    }
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+    nav ul li{
+        margin-left:0;
+    }
+    nav ul li a{
+        font-size:16px;
+    }
+    .logo{
+        font-size:18px;
+        text-align:center;
+    }
+
+    /* Properties Hero */
+    .properties-hero{
+        padding:50px 15px;
+    }
+    .properties-hero-content h1{
+        font-size:28px;
+        line-height:1.3;
+    }
+    .properties-hero-content p{
+        font-size:15px;
+        margin-bottom:30px;
+    }
+    .stats-row{
+        gap:25px;
+        margin-top:25px;
+    }
+    .stat h3{
+        font-size:32px;
+    }
+    .stat p{
+        font-size:13px;
+    }
+
+    /* Filter Bar */
+    .filter-bar{
+        padding:15px 10px;
+        position:relative; /* mobile me sticky hata diya */
+    }
+    .filter-container{
+        gap:8px;
+    }
+    .filter-btn{
+        padding:8px 14px;
+        font-size:13px;
+        border-radius:20px;
+    }
+
+    /* Property Cards */
+    .featured{
+        padding:40px 15px;
+    }
+    .featured h2{
+        font-size:28px;
+        margin-bottom:25px;
+    }
+    .property-container{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+    .property-card img{
+        height:200px;
+    }
+    .property-card h3{
+        font-size:18px;
+        padding:12px 15px 8px;
+    }
+    .property-card p{
+        font-size:14px;
+        padding:0 15px 8px;
+    }
+    .property-badge{
+        font-size:11px;
+        padding:5px 10px;
+        top:10px;
+        right:10px;
+    }
+    .property-tags span{
+        font-size:10px;
+        padding:3px 8px;
+    }
+    .property-card a{
+        font-size:14px;
+        padding:10px 15px;
+        margin:12px 15px;
+    }
+
+    /* Why Choose Us */
+    .why-properties{
+        padding:50px 15px;
+    }
+    .why-properties h2{
+        font-size:26px;
+        margin-bottom:30px;
+    }
+    .why-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+    .why-item{
+        padding:30px 20px;
+    }
+    .why-item .icon{
+        font-size:40px;
+    }
+    .why-item h3{
+        font-size:20px;
+    }
+    .why-item p{
+        font-size:15px;
+    }
+
+    /* FAQ */
+    .faq-section{
+        padding:50px 15px;
+    }
+    .faq-section h2{
+        font-size:26px;
+        margin-bottom:30px;
+    }
+    .faq-item{
+        padding:18px 15px;
+    }
+    .faq-item h4{
+        font-size:17px;
+    }
+    .faq-item p{
+        font-size:14px;
+    }
+
+    /* Footer Mobile */
+    .footer{
+        padding:40px 15px 15px;
+    }
+    .footer-col h4{
+        font-size:16px;
+    }
+    .footer-col p, .footer-col ul li a{
+        font-size:14px;
+    }
+}
+
+/* Very Small Mobile 320px - 480px */
+@media screen and (max-width: 480px) {
+    .properties-hero-content h1{ font-size:24px; }
+    .stat h3{ font-size:28px; }
+    .filter-btn{ padding:7px 12px; font-size:12px; }
+    .property-card img{ height:180px; }
+    .why-item, .faq-item{ padding:20px 15px; }
+}
