@@ -48,9 +48,10 @@ nav ul li a:hover{
 
 .hero{
     height:90vh;
-
-    background:url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200')
-    center center/cover;
+    background-image: url('../images/homepageback.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     display:flex;
     justify-content:center;
