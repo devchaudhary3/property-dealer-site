@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/pop1.jfif">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Properties | Khalifa's Estate and Properties</title>
+    <title>Properties - Khalifa's Estate and Properties</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -14,7 +14,6 @@
         <div class="logo">
             Khalifa's Estate and Properties
         </div>
-
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="properties.html">Properties</a></li>
@@ -22,152 +21,289 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    
-<section class="category-circles">
-    <div class="circle-wrap">
-        <div class="circle-item">
-            <span>Industrial Land<br>in Hapur, Delhi-NCR</span>
-        </div>
-        <div class="circle-item">
-            <span>Residential Plots<br>in Hapur</span>
-        </div>
-        <div class="circle-item">
-            <span>Commercial Shops<br>in Hapur, Ghaziabad</span>
-        </div>
-        <div class="circle-item">
-            <span>Properties in<br>Hapur, Noida & Greater Noida</span>
-        </div>
-    </div>
-</section>
 
+    <!-- Properties Hero Banner -->
+    <section class="properties-hero">
+        <div class="properties-hero-content">
+            <h1>Premium Properties in Hapur, Delhi-NCR</h1>
+            <p>15+ Years Experience | 500+ Happy Clients | Verified Properties Only</p>
+            <div class="stats-row">
+                <div class="stat"><h3>500+</h3><p>Properties Sold</p></div>
+                <div class="stat"><h3>15+</h3><p>Years Experience</p></div>
+                <div class="stat"><h3>100%</h3><p>Legal Verification</p></div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Category Circles -->
+    <section class="category-circles">
+        <div class="circle-wrap">
+            <div class="circle-item">
+                <span>Industrial Land<br>in Hapur, Delhi-NCR</span>
+            </div>
+            <div class="circle-item">
+                <span>Residential Plots<br>in Hapur</span>
+            </div>
+            <div class="circle-item">
+                <span>Commercial Shops<br>in Hapur, Ghaziabad</span>
+            </div>
+            <div class="circle-item">
+                <span>Properties in<br>Hapur, Noida & Greater Noida</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterAll()">All Properties</button>
+            <button class="filter-btn" onclick="filterType('house')">Houses</button>
+            <button class="filter-btn" onclick="filterType('land')">Land/Plots</button>
+            <button class="filter-btn" onclick="filterBudget('budget')">Under ₹50 Lakh</button>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
     <section class="featured">
-
         <h2>Available Properties</h2>
-
         <div class="property-container">
 
-                       <!-- Property 1 -->
+            <!-- Property 1 -->
             <div class="property-card">
                 <img src="images/prop1awasvikas.jpeg">
-
+                <div class="property-badge">Verified</div>
+                <div class="property-tags">
+                    <span>RERA Approved</span>
+                    <span>Immediate Registry</span>
+                </div>
                 <h3>Two-storey house</h3>
-
                 <p>Location: Awas-Vikas Hapur</p>
-
                 <p>Price: ₹45 Lakh</p>
-
-                <p>Details: Fully furnished with premium woodwork, exquisite marble flooring, and high-end sanitary fittings."</p>
-
-                <a href="https://wa.me/7668279395">
-                    WhatsApp Enquiry
+                <p>Details: Fully furnished with premium woodwork, exquisite marble flooring, and high-end sanitary fittings.</p>
+                <a href="https://wa.me/917668279395?text=Hi, I am interested in Two-storey house at Awas-Vikas" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Enquiry
                 </a>
             </div>
 
             <!-- Property 2 -->
             <div class="property-card">
                 <img src="images/50 begha1 raja g.jpg">
-
+                <div class="property-badge">Verified</div>
+                <div class="property-tags">
+                    <span>RERA Approved</span>
+                    <span>Immediate Registry</span>
+                </div>
                 <h3>10 Acres Land (50 Begha)</h3>
-
                 <p>Location: New Bypass NH-9, Kuchesar Road Chopla, Hapur</p>
-
                 <p>Price: ₹15,000 per sq. yard</p>
-
                 <p>Details: Best for Industrial, Hotels and Residential Purpose</p>
-
-                <a href="https://wa.me/7668279395">
-                    WhatsApp Enquiry
+                <a href="https://wa.me/917668279395?text=Hi, I am interested in 10 Acres Land at NH-9 Kuchesar Road" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Enquiry
                 </a>
             </div>
 
             <!-- Property 3 -->
             <div class="property-card">
                 <img src="images/NH334 30 begha.jfif">
-
+                <div class="property-badge">Verified</div>
+                <div class="property-tags">
+                    <span>RERA Approved</span>
+                    <span>Immediate Registry</span>
+                </div>
                 <h3>7 Acres Land (30 Begha)</h3>
-
-                <p>Location: Merrut Bulandshahr Bypass(NH-334)</p>
-
+                <p>Location: Meerut Bulandshahr Bypass (NH-334)</p>
                 <p>Price: ₹17,000 per sq. yard</p>
-
                 <p>Details: Prime land, ideal for residential colonies, hotels, marriage lawns, or industrial setups</p>
-
-                <a href="https://wa.me/7668279395">
-                    WhatsApp Enquiry
+                <a href="https://wa.me/917668279395?text=Hi, I am interested in 7 Acres Land at NH-334" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Enquiry
                 </a>
             </div>
 
-              <!-- Property 4 -->
-              <div class="property-card">
+            <!-- Property 4 -->
+            <div class="property-card">
                 <img src="images/krishna50gaj.jpeg">
-
+                <div class="property-badge">Verified</div>
+                <div class="property-tags">
+                    <span>RERA Approved</span>
+                    <span>Immediate Registry</span>
+                </div>
                 <h3>Three-storey house</h3>
-
                 <p>Location: Krishna Nagar Swarg Ashram Road Hapur</p>
-
                 <p>Price: ₹50 Lakh</p>
-
                 <p>Details: Best for family</p>
-
-                <a href="https://wa.me/7668279395">
-                    WhatsApp Enquiry
+                <a href="https://wa.me/917668279395?text=Hi, I am interested in Three-storey house at Krishna Nagar" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Enquiry
                 </a>
             </div>
 
-             <!-- Property 5 -->
-             <div class="property-card">
+            <!-- Property 5 -->
+            <div class="property-card">
                 <img src="images/land16begha.jpg">
-
+                <div class="property-badge">Verified</div>
+                <div class="property-tags">
+                    <span>RERA Approved</span>
+                    <span>Immediate Registry</span>
+                </div>
                 <h3>16 Begha Land</h3>
-
                 <p>Location: New Bypass NH-9, (Delhi-Moradabad) Highway</p>
-
                 <p>Price: ₹17,000 per sq. yard</p>
-
                 <p>Details: Industrial Setup and Residential Colony Purpose</p>
-
-                <a href="https://wa.me/7668279395">
-                    WhatsApp Enquiry
+                <a href="https://wa.me/917668279395?text=Hi, I am interested in 16 Begha Land at NH-9" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Enquiry
                 </a>
             </div>
 
-              <!-- Property 6 -->
-             <div class="property-card">
+            <!-- Property 6 -->
+            <div class="property-card">
                 <img src="images/land150begha.jpg">
-
+                <div class="property-badge">Verified</div>
+                <div class="property-tags">
+                    <span>RERA Approved</span>
+                    <span>Immediate Registry</span>
+                </div>
                 <h3>150 Begha Land</h3>
-
                 <p>Location: New Bypass NH-9, (Delhi-Moradabad) Highway</p>
-
                 <p>Price: ₹15,000 per sq. yard</p>
-
                 <p>Details: Industrial Setup and Residential Colony Purpose</p>
-
-                <a href="https://wa.me/7668279395">
-                    WhatsApp Enquiry
+                <a href="https://wa.me/917668279395?text=Hi, I am interested in 150 Begha Land at NH-9" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Enquiry
                 </a>
             </div>
 
-             <!-- Property 7 -->
-             <div class="property-card">
+            <!-- Property 7 -->
+            <div class="property-card">
                 <img src="images/plot1000gaj.jfif">
-
+                <div class="property-badge">Verified</div>
+                <div class="property-tags">
+                    <span>RERA Approved</span>
+                    <span>Immediate Registry</span>
+                </div>
                 <h3>1000 Gaj Land</h3>
-
                 <p>Location: Jarothi Road Hapur</p>
-
                 <p>Price: ₹15,000 per sq. yard</p>
-
                 <p>Details: Industrial Setup and Residential Purpose</p>
-
-                <a href="https://wa.me/7668279395">
-                    WhatsApp Enquiry
+                <a href="https://wa.me/917668279395?text=Hi, I am interested in 1000 Gaj Land at Jarothi Road" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Enquiry
                 </a>
             </div>
 
         </div>
-
     </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-properties">
+        <h2>Why Buy With Khalifa's Estate?</h2>
+        <div class="why-grid">
+            <div class="why-item">
+                <div class="icon">✓</div>
+                <h3>Legal Verification</h3>
+                <p>Har property ke papers hum khud check karte hain. Registry me koi dikkat nahi.</p>
+            </div>
+            <div class="why-item">
+                <div class="icon">💰</div>
+                <h3>Best Price Guarantee</h3>
+                <p>Market se kam rate me property dilayenge. Direct owner se deal.</p>
+            </div>
+            <div class="why-item">
+                <div class="icon">🏠</div>
+                <h3>Site Visit Free</h3>
+                <p>Hapur aur NCR me kahi bhi site visit. Gadi + chai humari taraf se.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h4>Registry kitne din me ho jayegi?</h4>
+                <p>Papers complete hain to 7-15 din me registry. Hum pura process handle karte hain.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Loan facility available hai kya?</h4>
+                <p>Haan, SBI, HDFC, ICICI sabhi banks se loan karwa dete hain. 80% tak loan.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Site visit ke charges kya hain?</h4>
+                <p>Bilkul free. Hapur me pickup-drop bhi free. Bas ek call karo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacts</h4>
+                <p>info@khalifasestate.com</p>
+                <p>+91 76682 79395</p>
+                <h4 style="margin-top:25px;">Socials</h4>
+                <div class="social-icons">
+                    <a href="https://instagram.com/Khalifaestate" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/917668279395" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Subscribe to our newsletter</h4>
+                <button type="button" disabled style="background:#555; cursor:not-allowed; width:100%; padding:12px; border:none; border-radius:6px; color:white;">Coming Soon</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Khalifa's Estate & Properties. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Filter -->
+    <script>
+    function filterAll(){
+        document.querySelectorAll('.property-card').forEach(card => card.style.display='block');
+        updateActiveBtn(event.target);
+    }
+    
+    function filterType(type){
+        document.querySelectorAll('.property-card').forEach(card => {
+            let title = card.querySelector('h3').innerText.toLowerCase();
+            if(title.includes(type) || (type=='land' && title.includes('begha'))){
+                card.style.display='block';
+            } else {
+                card.style.display='none';
+            }
+        });
+        updateActiveBtn(event.target);
+    }
+    
+    function filterBudget(budget){
+        document.querySelectorAll('.property-card').forEach(card => {
+            let priceText = card.querySelector('p:nth-of-type(2)').innerText;
+            if(priceText.includes('Lakh')){
+                let price = parseInt(priceText.replace('₹','').replace(' Lakh',''));
+                if(price < 50){
+                    card.style.display='block';
+                } else {
+                    card.style.display='none';
+                }
+            } else {
+                card.style.display='none';
+            }
+        });
+        updateActiveBtn(event.target);
+    }
+    
+    function updateActiveBtn(btn){
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+    }
+    </script>
 
 </body>
 </html>
