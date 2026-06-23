@@ -939,4 +939,7 @@ footer{
     .category-circles::before{
         background:rgba(255,255,255,0.2); /* PC me 0.5, mobile me 0.2 */
     }
+    .category-circles{
+        background-attachment: scroll; /* fixed ki jagah scroll */
+    }
 }
