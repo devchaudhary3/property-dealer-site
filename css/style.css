@@ -2,6 +2,7 @@ html,body{
     overflow-x:hidden;
 }
 
+
 *{
     margin:0;
     padding:0;
@@ -18,6 +19,7 @@ nav{
     align-items:center;
 
     padding:25px 80px;
+
     box-shadow:0 2px 10px rgba(0,0,0,0.08); /* halka shadow de taki neeche wale section se alag lage */
 }
 
@@ -52,6 +54,7 @@ nav ul li a:hover{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+   
 
     display:flex;
     justify-content:center;
@@ -746,7 +749,8 @@ nav ul li a:hover{
     font-size:24px;
     margin-bottom:20px;
     }
- /* MOBILE RESPONSIVE */
+
+    /* MOBILE RESPONSIVE */
 
     @media screen and (max-width:768px){
 
@@ -927,7 +931,7 @@ nav ul li a:hover{
         }
     }
 
-     /* Trust Section - Hero ke neeche gap + Box Design */
+    /* Trust Section - Hero ke neeche gap + Box Design */
 .trust-section{
     padding:100px 20px; /* upar-neeche 100px gap de diya */
     background:#ffffff;
@@ -1000,7 +1004,6 @@ nav ul li a:hover{
 }
 
 /* Category Circles Section */
-/* Category Circles Section */
 .category-circles{
     padding:80px 20px;
     background-image: url('../images/ai1.jpeg'); /* white ki jagah photo */
@@ -1025,6 +1028,15 @@ nav ul li a:hover{
     position:relative; /* overlay ke upar lane ke liye */
     z-index:2;
 }
+
+.circle-wrap{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:40px;
+    max-width:900px;
+    margin:0 auto;
+}
+
 .circle-item{
     width:100%;
     aspect-ratio:1/1; /* perfect circle */
@@ -1036,7 +1048,7 @@ nav ul li a:hover{
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:18px;
+    padding:20px;
     margin:0 auto;
     box-shadow:0 10px 30px rgba(0,0,0,0.25);
     transition:0.4s;
@@ -1062,10 +1074,10 @@ nav ul li a:hover{
         gap:30px;
     }
     .circle-item{
-        max-width:180px;
+        max-width:150px;
     }
     .circle-item span{
-        font-size:13px;
+        font-size:14px;
     }
     .category-circles::before{
         background:rgba(255,255,255,0.2); /* PC me 0.5, mobile me 0.2 */
@@ -1073,16 +1085,8 @@ nav ul li a:hover{
     .category-circles{
         background-attachment: scroll; /* fixed ki jagah scroll */
     }
-    .circle-wrap{
-    position:relative;
-    z-index:2;
-    display:grid; /* ye add kar */
-    grid-template-columns: 1fr 1fr; /* ye add kar */
-    gap:40px; /* ye add kar */
-    max-width:900px;
-    margin:0 auto;
 }
-}
+
 
 /* Properties Hero Banner */
 .properties-hero{
@@ -1311,6 +1315,24 @@ nav ul li a:hover{
     font-size:16px;
 }
 
+/* Mobile Responsive for Properties */
+@media (max-width:768px){
+    .properties-hero{ padding:60px 15px; }
+    .properties-hero-content h1{ font-size:32px; line-height:1.3; }
+    .properties-hero-content p{ font-size:16px; }
+    .stats-row{ gap:30px; }
+    .stat h3{ font-size:35px; }
+    .stat p{ font-size:14px; }
+    
+    .filter-container{ gap:10px; }
+    .filter-btn{ padding:10px 18px; font-size:14px; }
+    
+    .why-properties, .faq-section{ padding:60px 15px; }
+    .why-properties h2, .faq-section h2{ font-size:28px; margin-bottom:35px; }
+    
+    .faq-item{ padding:20px 20px; }
+    .faq-item h4{ font-size:18px; }
+}
 
 /* Extra Mobile Responsive - 320px to 768px */
 @media screen and (max-width: 768px) {
@@ -1476,6 +1498,8 @@ nav ul li a:hover{
     .property-card img{ height:180px; }
     .why-item, .faq-item{ padding:20px 15px; }
 }
+
+
 
 /* Contact Hero */
 .contact-hero{
@@ -1781,6 +1805,81 @@ nav ul li a:hover{
     .ticker{ animation:scroll 18s linear infinite; } /* mobile me thoda fast */
 }
 
+/* Land Opportunities 3D Section */
+.land-opportunities {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #fff;
+    text-align: center;
+}
+
+.land-opportunities h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #fbbf24, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.land-opportunities .sub-heading {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    margin-bottom: 50px;
+}
+
+.tilt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tilt-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 35px 25px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+
+.tilt-card:hover {
+    border: 1px solid #fbbf24;
+    box-shadow: 0 20px 40px rgba(251, 191, 36, 0.2);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    transform: translateZ(40px);
+}
+
+.tilt-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #fbbf24;
+    transform: translateZ(30px);
+}
+
+.tilt-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #e2e8f0;
+    transform: translateZ(20px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .land-opportunities h2 {
+        font-size: 1.8rem;
+    }
+    .tilt-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* ===== ABOUT SECTION PREMIUM UPGRADE ===== */
 .about-section {
