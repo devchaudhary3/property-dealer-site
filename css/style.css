@@ -1796,13 +1796,23 @@ nav ul li a:hover{
 }
 
 /* Mobile Responsive */
+/* Mobile Responsive */
 @media (max-width:768px){
-    .ticker span{ 
-        font-size:14px;
-        letter-spacing:0.5px;
+    .ticker-wrap{ 
+        padding:6px 0;
+        border-bottom:2px solid #d4a017;
     }
-    .ticker-wrap{ padding:8px 0; }
-    .ticker{ animation:scroll 18s linear infinite; } /* mobile me thoda fast */
+    .ticker{ 
+        animation:scroll 15s linear infinite;
+        width:max-content; /* 200% hata diya */
+    }
+    .ticker span{ 
+        font-size:13px;
+        letter-spacing:0.3px;
+        padding:0 30px; /* gap badhaya taaki text chipke na */
+        display:inline-block;
+        width:auto; /* 50% hata diya */
+    }
 }
 
 /* Land Opportunities 3D Section */
