@@ -2053,3 +2053,105 @@ nav ul li a:hover{
         padding: 30px 25px;
     }
 }
+
+/* Unique Vertical Neon Scan Ticker */
+.ticker-vertical-wrap{
+    position:relative;
+    width:100%;
+    height:180px;
+    margin:40px 0;
+    overflow:hidden;
+    background:linear-gradient(180deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
+    border-radius:16px;
+    box-shadow:0 0 40px rgba(212,160,23,0.25);
+}
+
+/* Glass effect overlay */
+.ticker-vertical-wrap::before{
+    content:'';
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    background:linear-gradient(90deg, transparent 0%, rgba(212,160,23,0.08) 50%, transparent 100%);
+    z-index:2;
+    pointer-events:none;
+}
+
+/* Top-Bottom fade mask */
+.ticker-vertical-wrap::after{
+    content:'';
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    background:linear-gradient(180deg, #1a1a1a 0%, transparent 20%, transparent 80%, #1a1a1a 100%);
+    z-index:3;
+    pointer-events:none;
+}
+
+.ticker-vertical{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    height:200%;
+    animation:neonScroll 22s linear infinite;
+    z-index:1;
+}
+
+.ticker-vertical span{
+    height:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-size:18px;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    padding:0 25px;
+    line-height:1.6;
+    color:#d4a017;
+    text-shadow:0 0 10px rgba(212,160,23,0.6), 0 0 20px rgba(212,160,23,0.3);
+}
+
+/* Neon scan line effect */
+.ticker-vertical span::after{
+    content:'';
+    position:absolute;
+    left:5%; right:5%;
+    height:2px;
+    background:linear-gradient(90deg, transparent, #d4a017, transparent);
+    animation:scanLine 2s ease-in-out infinite;
+    opacity:0.7;
+}
+
+@keyframes neonScroll{
+    0%{ transform:translateY(0); }
+    100%{ transform:translateY(-50%); }
+}
+
+@keyframes scanLine{
+    0%,100%{ top:20%; opacity:0.3; }
+    50%{ top:80%; opacity:1; }
+}
+
+/* Mobile Responsive - Unique style */
+@media (max-width:768px){
+    .ticker-vertical-wrap{ 
+        height:140px;
+        margin:25px 10px;
+        border-radius:12px;
+        box-shadow:0 0 25px rgba(212,160,23,0.15);
+    }
+    .ticker-vertical{ 
+        animation:neonScroll 16s linear infinite;
+    }
+    .ticker-vertical span{ 
+        font-size:13px;
+        letter-spacing:1px;
+        padding:0 15px;
+        line-height:1.5;
+        text-shadow:0 0 8px rgba(212,160,23,0.5);
+    }
+    .ticker-vertical span::after{
+        height:1px;
+        animation:scanLine 1.5s ease-in-out infinite;
+    }
+}
